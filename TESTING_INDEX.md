@@ -79,12 +79,15 @@ npx playwright show-report
 ## File Structure
 
 ```
-/Users/ikerry/works/ai-game/
+/Users/ikerry/works/snake-game/
 ├── playwright.config.js          # Test configuration
 ├── package.json                  # Dependencies & scripts
 ├── tests/
 │   ├── game.spec.js             # Functional tests
-│   └── visual.spec.js           # Visual & performance tests
+│   ├── visual.spec.js           # Visual & performance tests
+│   ├── test-game.js             # Additional test utilities
+│   ├── test-results.json        # Latest test results (JSON format)
+│   └── test-results/            # HTML reports and detailed test results
 ├── TESTING_INDEX.md             # This file
 ├── README_TESTING.md            # Main overview
 ├── TEST_QUICK_START.md          # Quick reference

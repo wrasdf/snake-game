@@ -127,7 +127,7 @@ npx playwright show-report
 After running tests, Playwright generates:
 
 ### HTML Report
-- Located at: `playwright-report/index.html`
+- Located at: `tests/test-results/index.html`
 - View with: `npx playwright show-report`
 - Contains:
   - All test results with pass/fail status
@@ -137,7 +137,7 @@ After running tests, Playwright generates:
   - Error details and traces
 
 ### JSON Report
-- Located at: `test-results.json`
+- Located at: `tests/test-results.json`
 - Machine-readable format
 - Useful for CI/CD pipelines
 

@@ -29,4 +29,4 @@
 - [x] 6.1 Run game and verify it loads without errors
 - [x] 6.2 Verify styles are applied correctly
 - [x] 6.3 Run Playwright tests to ensure they pass with updated paths
-- [ ] 6.4 Commit changes to git with clear commit message
+- [x] 6.4 Commit changes to git with clear commit message

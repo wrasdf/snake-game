@@ -123,12 +123,12 @@ Tests organized into suites:
 
 After running tests, reports are generated:
 
-- **HTML Report**: `playwright-report/index.html`
+- **HTML Report**: `tests/test-results/index.html`
   - Open in browser: `npx playwright show-report`
   - Shows test results, screenshots, videos (on failure)
   - Detailed timing and error information
 
-- **JSON Report**: `test-results.json`
+- **JSON Report**: `tests/test-results.json`
   - Machine-readable test results
   - Useful for CI/CD integration
 
