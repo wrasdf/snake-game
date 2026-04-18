@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.score-display {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.game-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#gameCanvas {
+    border: 3px solid #333;
+    background: #f0f0f0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.game-over-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.game-over-overlay.hidden {
+    display: none;
+}
+
+.game-over-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.game-over-content h2 {
+    font-size: 28px;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.game-over-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#restartBtn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#restartBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#restartBtn:active {
+    transform: translateY(0);
+}
+
+footer {
+    background: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .score-display {
+        font-size: 16px;
+    }
+
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    .game-over-content {
+        padding: 20px;
+    }
+
+    .game-over-content h2 {
+        font-size: 24px;
+    }
+
+    .game-over-content p {
+        font-size: 16px;
+    }
+}
