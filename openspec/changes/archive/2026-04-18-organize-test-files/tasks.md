@@ -22,4 +22,4 @@
 - [x] 4.1 Run Playwright tests to ensure they pass with new file structure
 - [x] 4.2 Verify test results are generated in new location
 - [x] 4.3 Verify HTML reports are generated in new location
-- [ ] 4.4 Commit changes to git with clear commit message
+- [x] 4.4 Commit changes to git with clear commit message
